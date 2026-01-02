@@ -5,5 +5,5 @@ edition = "2024"
 
 [dependencies]
 enigo = "0.6.1"
-eframe = "0.29.1"
-egui = "0.29.1"
+eframe = "0.33.3"
+egui = "0.33.3"
