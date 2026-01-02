@@ -1,9 +1,16 @@
 [package]
 name = "jiggler"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2024"
 
 [dependencies]
 enigo = "0.6.1"
 eframe = "0.33.3"
 egui = "0.33.3"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
