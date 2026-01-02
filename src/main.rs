@@ -50,7 +50,6 @@ impl JigglerApp {
                     eprintln!("Cannot move the mouse: {e}");
                 }
 
-                // Czekamy 30 sekund
                 let mut elapsed = Duration::from_secs(0);
                 while elapsed < interval && flag.load(Ordering::SeqCst) {
                     let step = Duration::from_millis(200);
